@@ -16,7 +16,10 @@ function toggleFtMenu() {
     const c = document.getElementsByClassName('jump-menu__item');
     for (var i = 0; i < c.length; i++) {
         c[i].addEventListener('click', () => {
-            ftPlazas.classList.remove("active","visible");
+            ftPlazas.classList.remove("active");
+            setTimeout(() => {
+                ftPlazas.classList.remove('visible');
+            }, "300")
         })
     }
 }
