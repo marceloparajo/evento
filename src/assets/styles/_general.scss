@@ -63,15 +63,27 @@
         position: relative;
 
         .jump-menu {
-            padding: 0 18px;
+            padding: 10px 18px;
             left: 0;
             right: 0;
-            top: 75px;
+            top: 67px;
             width: 100%;
-            z-index: 1;
-            display: none;
+            z-index: -1;
+            overflow: hidden;
+            >li {
+                margin-bottom: -45px;
+                &:first-of-type {
+                    transform: translateY(-54px);
+                }
+            }
             &.visible {
-                display: block;
+                z-index: 1;
+                >li {
+                    margin-bottom: 8px;
+                    &:first-of-type {
+                        transform: translateY(0);
+                    }
+                }
             }
         }
     }
