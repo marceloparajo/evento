@@ -31,24 +31,12 @@ html {
 
     &--orange {
         background: var(--color-a);
-        &:hover {
-            background: var(--color-a-hover);
-        }
     }
     &--blue {
         background: var(--color-b);
-        &:hover {
-            background: var(--color-b-hover);
-        }
     }
 }
 
-.container {
-    width: 100%;
-    max-width: 1360px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .uppercase {
     text-transform: uppercase;
@@ -99,10 +87,6 @@ html {
         }
         .button {
             font-size: 15px;
-        }
-
-        >ul {
-            display: none;
         }
     }
 }
@@ -163,6 +147,32 @@ html {
         justify-content: space-between;
         gap: 25px;
         width: 100%;
+    }
+}
+
+
+
+        
+.jump-menu {
+    display: block;
+    transition: ease .3s;
+    width: 260px;
+    padding-top: 15px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    z-index: -1;
+    opacity: 0;
+    >li {
+        margin-bottom: -20px;
+        transition: ease .3s;
+    }
+    &.active {
+        opacity: 1;
+        top: 45px;
+        > li {
+            margin-bottom: 8px;
+        }
     }
 }
 
