@@ -51,28 +51,45 @@
                                 <path d="M13.2147 0L17 3.78526L8.41918 12.393H15.0872V17H0V1.91284H4.62044V8.58083L13.2147 0Z" fill="white"/>
                                 </svg>
                         Inscríbete</span>
+                        <ul class="jump-menu" id="menu-plazas">
+                            <li class="jump-menu__item" onclick="toggleCatMenu('culiacan')">
+                                <span class="button button--blue button--link">
+                                    En Culiacán
+                                </span>
+                            </li>
+                            <li class="jump-menu__item" onclick="toggleCatMenu('mazatlan')">
+                                <span class="button button--blue button--link">
+                                    En Mazatlán
+                                </span>
+                            </li>
+                            <li class="jump-menu__item" onclick="toggleCatMenu('losmochis')">
+                                <span class="button button--blue button--link">
+                                    En Los Mochis
+                                </span>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__menu-item header__menu-item-button bounce d-sm-none">
-                        <a href="#" class="button button--orange button--link">
+                        <span class="button button--orange button--link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 17 17" fill="none" class="header__menu-icon button-icon">
                                 <path d="M13.2147 0L17 3.78526L8.41918 12.393H15.0872V17H0V1.91284H4.62044V8.58083L13.2147 0Z" fill="white"/>
                                 </svg>Inscríbete
-                        </a>
+                            </span>
                         <ul class="jump-menu">
-                            <li class="jump-menu__item">
-                                <a href="index.html" class="button button--blue button--link">
+                            <li class="jump-menu__item" onclick="toggleCatMenu('culiacan')">
+                                <span class="button button--blue button--link">
                                     En Culiacán
-                                </a>
+                                </span>
                             </li>
-                            <li class="jump-menu__item">
-                                <a href="mazatlan.html" class="button button--blue button--link">
+                            <li class="jump-menu__item" onclick="toggleCatMenu('mazatlan')">
+                                <span class="button button--blue button--link">
                                     En Mazatlán
-                                </a>
+                                </span>
                             </li>
-                            <li class="jump-menu__item">
-                                <a href="losmochis.html" class="button button--blue button--link">
+                            <li class="jump-menu__item" onclick="toggleCatMenu('losmochis')">
+                                <span class="button button--blue button--link">
                                     En Los Mochis
-                                </a>
+                                </span>
                             </li>
                         </ul>
                     </li>
@@ -105,12 +122,32 @@
                 </div>
 
                 <div class="featured__button bounce">
-                    <span class="button button--orange button--link" onclick="toggleMenu()">
+                    <span class="button button--orange button--link" onclick="toggleFtMenu()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 17 17" fill="none" class="featured__button-icon button-icon">
                             <path d="M13.2147 0L17 3.78526L8.41918 12.393H15.0872V17H0V1.91284H4.62044V8.58083L13.2147 0Z" fill="white"/>
                             </svg>
                         Inscríbete
-                        </span>
+                    </span>
+
+
+                        <ul class="jump-menu" id="ft-plazas">
+                            <li class="jump-menu__item" onclick="toggleCatMenu('culiacan')">
+                                <span class="button button--blue button--link">
+                                    En Culiacán
+                                </span>
+                            </li>
+                            <li class="jump-menu__item" onclick="toggleCatMenu('mazatlan')">
+                                <span class="button button--blue button--link">
+                                    En Mazatlán
+                                </span>
+                            </li>
+                            <li class="jump-menu__item" onclick="toggleCatMenu('losmochis')">
+                                <span class="button button--blue button--link">
+                                    En Los Mochis
+                                </span>
+                            </li>
+                        </ul>
+
                 </div>  
             </div>
                 
@@ -357,53 +394,319 @@
         </div>
     </footer>
 
-    <div id="modalmenu" class="modal">
-        <div class="modal__overlay" onclick="toggleMenu()">
+    <div id="modalmenu-culiacan" class="modal">
+        <div class="modal__overlay" onclick="toggleCatMenu('culiacan')">
             <div class="modal__content uppercase">
-                <div class="modal__title">
-                    Quiero participar en:
+                <div class="modal__hat">
+                    Culiacán, 22 de febrero
                 </div>
-                <ul class="modal__menu">
-                    <li class="modal__menu-item">
-                        <a href="index.html" class="button button--blue button--link">
-                            En Culiacán
-                        </a>
-                    </li>
-                    <li class="modal__menu-item">
-                        <a href="mazatlan.html" class="button button--blue button--link">
-                            En Mazatlán
-                        </a>
-                    </li>
-                    <li class="modal__menu-item">
-                        <a href="losmochis.html" class="button button--blue button--link">
-                            En Los Mochis
-                        </a>
-                    </li>
-                </ul>
-                <button class="modal__close" aria-label="Cerrar Menu" id="modalclose">
-                    Cancelar
-                </button>
+                <div class="modal__title">
+                    Quiero participar en la categoría:
+                </div>
+                <div class="modal__menu-container">
+                    <ul class="modal__menu">
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pequeñines - 2017 y menores</a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros - 2015
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros -2016
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2013
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2014 
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2011
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2012
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2009
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2010
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2007
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2008
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2005
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2006
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Novatos - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Intermedia - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Femenil - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Libre Varonil - Libre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__message">
+                    Luego de seleccionar la categoría, podrás continuar con el registro.
+                </div>
             </div>
         </div>
     </div>
 
-<script>
-    
-    function toggleMenu() {
-        const modal = document.getElementById('modalmenu');
-        modal.classList.toggle('active');
-        const modalClose = document.getElementById('modalclose');
-        modalClose.addEventListener('click', () => {
-            modalMenu.classList.toggle("active");
-        })
-    }
+    <div id="modalmenu-mazatlan" class="modal">
+        <div class="modal__overlay" onclick="toggleCatMenu('mazatlan')">
+            <div class="modal__content uppercase">
+                <div class="modal__hat">
+                    Mazatlán, 22 de febrero
+                </div>
+                <div class="modal__title">
+                    Quiero participar en la categoría:
+                </div>
+                <div class="modal__menu-container">
+                    <ul class="modal__menu">
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pequeñines - 2017 y menores</a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros - 2015
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros -2016
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2013
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2014 
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2011
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2012
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2009
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2010
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2007
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2008
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2005
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2006
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Novatos - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Intermedia - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Femenil - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Libre Varonil - Libre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__message">
+                    Luego de seleccionar la categoría, podrás continuar con el registro.
+                </div>
+            </div>
+        </div>
+    </div>
 
-    function toggleModuleContent(n) {
-        const content = document.getElementById('module-content-' + n);
-        content.classList.toggle('collapse');
-    }
+    <div id="modalmenu-losmochis" class="modal">
+        <div class="modal__overlay" onclick="toggleCatMenu('losmochis')">
+            <div class="modal__content uppercase">
+                <div class="modal__hat">
+                    Los Mochis, 22 de febrero
+                </div>
+                <div class="modal__title">
+                    Quiero participar en la categoría:
+                </div>
+                <div class="modal__menu-container">
+                    <ul class="modal__menu">
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pequeñines - 2017 y menores</a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros - 2015
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cachorros -2016
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2013
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Microbasquet - 2014 
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2011
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Mini Baloncesto - 2012
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2009
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Pasarella - 2010
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2007
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Cadetes - 2008
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2005
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Juvenil - 2006
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Novatos - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Intermedia - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Femenil - Libre
+                            </a>
+                        </li>
+                        <li class="modal__menu-item">
+                            <a href="#" class="button button--blue button--link">
+                                Libre Libre Varonil - Libre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__message">
+                    Luego de seleccionar la categoría, podrás continuar con el registro.
+                </div>
+            </div>
+        </div>
+    </div>
 
-</script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
